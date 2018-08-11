@@ -5,7 +5,7 @@ exports[`Shapshot 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c4 {
   color: white;
   font-size: 2em;
 }
@@ -15,11 +15,20 @@ exports[`Shapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
+  background: rgba(25,25,25,.5);
   width: 100%;
   height: 35%;
   bottom: 0;
   left: 0;
+}
+
+.c3 {
+  height: 100%;
 }
 
 .c0 {
@@ -38,10 +47,11 @@ exports[`Shapshot 1`] = `
   >
     <img
       alt="7 news logo"
+      className="c3"
       src="logo.png"
     />
     <div
-      className="c3"
+      className="c4"
     >
       Home and Away
     </div>

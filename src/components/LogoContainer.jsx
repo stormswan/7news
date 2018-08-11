@@ -8,7 +8,7 @@ export default class LogoContainer extends PureComponent {
   render() {
     return (
       <LogoContainerStyle>
-        <img src={logo} alt='7 news logo'/>
+        <LogoImgStyle src={logo} alt='7 news logo'/>
         <LogoText>Home and Away</LogoText>
       </LogoContainerStyle>
     )
@@ -19,9 +19,15 @@ export default class LogoContainer extends PureComponent {
 
 const LogoContainerStyle = styled.div`
   display: inline-flex;
+  align-items:center;
   position:absolute; 
+  background: rgba(25, 25, 25, .5); 
   width:100%;
   height: 35% ;
   bottom: 0; 
   left: 0;
+`
+
+const LogoImgStyle = styled.img`
+  height: 100%;
 `

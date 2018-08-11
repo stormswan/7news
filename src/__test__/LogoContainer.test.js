@@ -14,7 +14,9 @@ test('Shapshot', () => {
 test('should has expected styles', () => {
   const logoContainer = renderer.create( <LogoContainer/>).toJSON()
   expect(logoContainer).toHaveStyleRule('display','inline-flex')
+  expect(logoContainer).toHaveStyleRule('align-items','center')
   expect(logoContainer).toHaveStyleRule('position','absolute')
+  expect(logoContainer).toHaveStyleRule('background',"rgba(25, 25, 25, .5)".replace(/ /g, ''))
   expect(logoContainer).toHaveStyleRule('width','100%')
   expect(logoContainer).toHaveStyleRule('height','35%')
   expect(logoContainer).toHaveStyleRule('bottom','0')
