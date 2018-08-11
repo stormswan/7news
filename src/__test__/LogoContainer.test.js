@@ -23,7 +23,7 @@ test('should has expected styles', () => {
   expect(logoContainer).toHaveStyleRule('position','absolute')
   expect(logoContainer).toHaveStyleRule('background',"rgba(25, 25, 25, .5)".replace(/ /g, ''))
   expect(logoContainer).toHaveStyleRule('width','100%')
-  expect(logoContainer).toHaveStyleRule('height','35%')
+  expect(logoContainer).toHaveStyleRule('height','32%')
   expect(logoContainer).toHaveStyleRule('bottom','0')
   expect(logoContainer).toHaveStyleRule('left','0')
 });

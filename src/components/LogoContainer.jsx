@@ -28,7 +28,7 @@ const LogoContainerStyle = styled.div`
   position:absolute; 
   background: rgba(25, 25, 25, .5); 
   width:100%;
-  height: 35% ;
+  height: 32% ;
   bottom: 0; 
   left: 0;
 `
