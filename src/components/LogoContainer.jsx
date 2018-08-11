@@ -34,5 +34,5 @@ const LogoContainerStyle = styled.div`
 `
 
 const LogoImgStyle = styled.img`
-  height: 100%;
+  height: 70%;
 `
