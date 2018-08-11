@@ -6,6 +6,7 @@ exports[`Shapshot 1`] = `
 }
 
 .c4 {
+  margin-left: 0.85em;
   color: white;
   font-size: 3em;
 }

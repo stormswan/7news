@@ -4,6 +4,7 @@ const LogoText = styled.div.attrs ({
   size: props => props.size || '3em',
   color: props => props.color || 'white',
 })`
+    margin-left: 0.85em;
     color: ${props => props.color};
     font-size: ${props => props.size};
 

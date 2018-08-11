@@ -30,6 +30,7 @@ test('should work with default value', () => {
   const logoText = renderer.create( <LogoText>Home and Away</LogoText>).toJSON()
   expect(logoText).toHaveStyleRule('color','white')
   expect(logoText).toHaveStyleRule('font-size','3em')
+  expect(logoText).toHaveStyleRule('margin-left','0.85em')
 });
 
 test('should work with props value', () => {
