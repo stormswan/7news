@@ -26,7 +26,7 @@ const LogoContainerStyle = styled.div`
   display: inline-flex;
   align-items:center;
   position:absolute; 
-  background: rgba(25, 25, 25, .5); 
+  background: rgba(25, 25, 25, .7); 
   width:100%;
   height: 32% ;
   bottom: 0; 
