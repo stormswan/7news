@@ -5,14 +5,19 @@ import 'jest-styled-components'
 import LogoContainer from '../components/LogoContainer'
 import LogoText from '../components/LogoText'
 
+import logoImg from '../images/logo.png'
+
+const alt= '7 news logo'
+const title = 'Home and Away'
+
 test('Shapshot', () => {
-  const logoContainer = renderer.create( <LogoContainer />).toJSON()
+  const logoContainer = renderer.create( <LogoContainer title='Home and Away'/>).toJSON()
   expect(logoContainer).toMatchSnapshot()
 })
 
 
 test('should has expected styles', () => {
-  const logoContainer = renderer.create( <LogoContainer/>).toJSON()
+  const logoContainer = renderer.create( <LogoContainer title='Home and Away' />).toJSON()
   expect(logoContainer).toHaveStyleRule('display','inline-flex')
   expect(logoContainer).toHaveStyleRule('align-items','center')
   expect(logoContainer).toHaveStyleRule('position','absolute')
@@ -25,12 +30,8 @@ test('should has expected styles', () => {
 
 
 test('should work with props value', () => {
-  const alt= '7 news logo'
-  const src = 'logo.png';
-  const title = 'Home and Away'
-  const logoContainer = renderer.create( <LogoContainer />).root
-
+  const logoContainer = renderer.create( <LogoContainer title={title} />).root
   expect(logoContainer.findByType('img').props.alt).toBe(alt);
-  expect(logoContainer.findByType('img').props.src).toBe(src);
+  expect(logoContainer.findByType('img').props.src).toBe(logoImg);
   expect(logoContainer.findByType(LogoText).props.children).toBe(title);
 });

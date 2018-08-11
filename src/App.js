@@ -4,7 +4,7 @@ import TitleContainer from './components/TitleContainer'
 class App extends Component {
   render() {
     return (
-      <TitleContainer/>
+      <TitleContainer title='Home and Away'/>
     );
   }
 }

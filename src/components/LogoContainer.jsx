@@ -1,15 +1,20 @@
 import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import LogoText from './LogoText'
 import logo from '../images/logo.png'
 
 export default class LogoContainer extends PureComponent {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+  }
+
   render() {
     return (
       <LogoContainerStyle>
         <LogoImgStyle src={logo} alt='7 news logo'/>
-        <LogoText>Home and Away</LogoText>
+        <LogoText>{this.props.title}</LogoText>
       </LogoContainerStyle>
     )
   }
