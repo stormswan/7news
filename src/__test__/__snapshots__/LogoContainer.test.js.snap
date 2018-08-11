@@ -3,7 +3,7 @@
 exports[`Shapshot 1`] = `
 .c2 {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .c0 {
@@ -27,6 +27,24 @@ exports[`Shapshot 1`] = `
   height: 100%;
 }
 
+@media (max-width:576px) {
+  .c2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width:992px) {
+  .c2 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c2 {
+    font-size: 5em;
+  }
+}
+
 <div
   className="c0"
 >
@@ -37,6 +55,8 @@ exports[`Shapshot 1`] = `
   />
   <div
     className="c2"
+    color="white"
+    size="3em"
   >
     Home and Away
   </div>

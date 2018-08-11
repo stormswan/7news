@@ -7,7 +7,7 @@ exports[`Shapshot 1`] = `
 
 .c4 {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .c2 {
@@ -35,6 +35,24 @@ exports[`Shapshot 1`] = `
   position: relative;
 }
 
+@media (max-width:576px) {
+  .c4 {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width:992px) {
+  .c4 {
+    font-size: 4em;
+  }
+}
+
+@media (min-width:1200px) {
+  .c4 {
+    font-size: 5em;
+  }
+}
+
 <div
   className="c0"
 >
@@ -52,6 +70,8 @@ exports[`Shapshot 1`] = `
     />
     <div
       className="c4"
+      color="white"
+      size="3em"
     >
       Home and Away
     </div>
