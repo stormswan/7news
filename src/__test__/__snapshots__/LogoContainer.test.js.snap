@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shapshot 1`] = `
+.c0 {
+  color: white;
+  font-size: 2em;
+}
+
+<div>
+  <img
+    alt="7 news logo"
+    src="logo.png"
+  />
+  <div
+    className="c0"
+  >
+    Home and Away
+  </div>
+</div>
+`;
