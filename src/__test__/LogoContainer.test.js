@@ -24,8 +24,8 @@ test('should has expected styles', () => {
   expect(logoContainer).toHaveStyleRule('background',"rgba(25, 25, 25, .7)".replace(/ /g, ''))
   expect(logoContainer).toHaveStyleRule('width','100%')
   expect(logoContainer).toHaveStyleRule('height','32%')
-  expect(logoContainer).toHaveStyleRule('bottom','0')
-  expect(logoContainer).toHaveStyleRule('left','0')
+  expect(logoContainer).toHaveStyleRule('bottom','3px')
+  expect(logoContainer).toHaveStyleRule('left','0px')
 });
 
 
