@@ -6,6 +6,7 @@ exports[`Shapshot 1`] = `
 }
 
 <img
+  alt="title background image"
   className="c0"
   src={undefined}
 />
