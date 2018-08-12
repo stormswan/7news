@@ -5,18 +5,16 @@ import styled from 'styled-components'
 import TitleBackgroundImg from './TitleBackgroundImg'
 import LogoContainer from './LogoContainer'
 
-import bgImg from '../images/tile.jpg'
-
-
 export default class TitleContainer extends PureComponent {
   static propTypes = {
     title: PropTypes.string.isRequired,
+    backgroundImg: PropTypes.string.isRequired,
   }
 
   render() {
     return (
       <TitleContainerStyle>
-        <TitleBackgroundImg src={bgImg}/>
+        <TitleBackgroundImg src={this.props.backgroundImg}/>
         <LogoContainer title={this.props.title}/>
       </TitleContainerStyle>
     )
