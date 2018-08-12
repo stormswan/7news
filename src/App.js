@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import bgImg from './images/tile.jpg'
 
@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <TitleContainer title='Home and Away' backgroundImg={bgImg}/>
-    );
+    )
   }
 }
 
-export default App;
+export default App

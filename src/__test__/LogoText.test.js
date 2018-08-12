@@ -23,7 +23,7 @@ test('should change font size at differnet screen size', () => {
   expect(logoText).toHaveStyleRule('font-size', '1.8em', {
     media: '(max-width: 576px)'
   })
-});
+})
 
 
 test('should work with default value', () => {
@@ -31,7 +31,7 @@ test('should work with default value', () => {
   expect(logoText).toHaveStyleRule('color','white')
   expect(logoText).toHaveStyleRule('font-size','3em')
   expect(logoText).toHaveStyleRule('margin-left','0.85em')
-});
+})
 
 test('should work with props value', () => {
   const color = 'green'
@@ -39,4 +39,4 @@ test('should work with props value', () => {
   const logoText = renderer.create( <LogoText color={color} size={size}>Home and Away</LogoText>).toJSON()
   expect(logoText).toHaveStyleRule('color',color)
   expect(logoText).toHaveStyleRule('font-size',size)
-});
+})

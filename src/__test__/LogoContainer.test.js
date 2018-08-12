@@ -21,17 +21,17 @@ test('should has expected styles', () => {
   expect(logoContainer).toHaveStyleRule('display','inline-flex')
   expect(logoContainer).toHaveStyleRule('align-items','center')
   expect(logoContainer).toHaveStyleRule('position','absolute')
-  expect(logoContainer).toHaveStyleRule('background',"rgba(25, 25, 25, .7)".replace(/ /g, ''))
+  expect(logoContainer).toHaveStyleRule('background','rgba(25, 25, 25, .7)'.replace(/ /g, ''))
   expect(logoContainer).toHaveStyleRule('width','100%')
   expect(logoContainer).toHaveStyleRule('height','32%')
   expect(logoContainer).toHaveStyleRule('bottom','3px')
   expect(logoContainer).toHaveStyleRule('left','0px')
-});
+})
 
 
 test('should work with props value', () => {
   const logoContainer = renderer.create( <LogoContainer title={title} />).root
-  expect(logoContainer.findByType('img').props.alt).toBe(alt);
-  expect(logoContainer.findByType('img').props.src).toBe(logoImg);
-  expect(logoContainer.findByType(LogoText).props.children).toBe(title);
-});
+  expect(logoContainer.findByType('img').props.alt).toBe(alt)
+  expect(logoContainer.findByType('img').props.src).toBe(logoImg)
+  expect(logoContainer.findByType(LogoText).props.children).toBe(title)
+})

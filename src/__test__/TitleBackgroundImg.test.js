@@ -15,13 +15,13 @@ test('Shapshot', () => {
 test('should work with default value', () => {
   const backgroundImg = renderer.create( <TitleBackgroundImg/>).toJSON()
   expect(backgroundImg).toHaveStyleRule('width','100%')
-  expect(backgroundImg.props.alt).toBe('title background image');
-});
+  expect(backgroundImg.props.alt).toBe('title background image')
+})
 
 test('should work with props value', () => {
   const alt= 'background'
-  const src = '../images/tile.jpg';
+  const src = '../images/tile.jpg'
   const backgroundImg = renderer.create( <TitleBackgroundImg alt={alt} src={src}/>).toJSON()
-  expect(backgroundImg.props.alt).toBe(alt);
-  expect(backgroundImg.props.src).toBe(src);
-});
+  expect(backgroundImg.props.alt).toBe(alt)
+  expect(backgroundImg.props.src).toBe(src)
+})
